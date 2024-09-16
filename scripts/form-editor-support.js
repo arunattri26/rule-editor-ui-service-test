@@ -349,3 +349,18 @@ const observer = new MutationObserver(instrumentForms);
 observer.observe(document, { childList: true, subtree: true, attributeFilter: ['form'] });
 loadCSS(`${window.hlx.codeBasePath}/scripts/form-editor-support.css`);
 attachEventListners(document.querySelector('main'));
+
+function enableRuleEditorExtension() {
+  const head = document.getElementsByTagName('head')[0];
+  const meta = document.createElement('meta');
+  meta.name = 'urn:adobe:aue:config:extensions';
+  const params = new URLSearchParams(window.location.search);
+  const version = params.get('livecycle-ruleeditor-ui-service_version');
+  if (version) {
+    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/universal_editor.html?livecycle-ruleeditor-ui-service_version=${version}`;
+  } else {
+    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/universal_editor.html`;
+  }
+  head.appendChild(meta);
+}
+enableRuleEditorExtension();
