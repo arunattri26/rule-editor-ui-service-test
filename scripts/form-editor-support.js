@@ -357,9 +357,9 @@ function enableRuleEditorExtension() {
   const params = new URLSearchParams(window.location.search);
   const version = params.get('livecycle-ruleeditor-ui-service_version');
   if (version) {
-    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/universal_editor.html?shell_domain=*.adobeaemcloud.com&livecycle-ruleeditor-ui-service_version=${version}`;
+    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=${version}`;
   } else {
-    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/universal_editor.html?shell_domain=*.adobeaemcloud.com`;
+    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html`;
   }
   head.appendChild(meta);
 }
