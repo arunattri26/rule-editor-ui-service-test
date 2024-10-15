@@ -357,12 +357,12 @@ function enableRuleEditorExtension() {
   const params = new URLSearchParams(window.location.search);
   console.log('Rule editor extension Params: ', params);
   const version = params.get('livecycle-ruleeditor-ui-service_version');
-  if (version) {
+  // if (version) {
     // meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=${version}`;
     meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=PR-117-6778c0f53f35d778f287bb41c5840492344d6d9c`;
-  } else {
-    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html`;
-  }
+  // } else {
+  //   meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html`;
+  // }
   console.log('Adding meta tag for rule editor extension: ', meta.content);
   head.appendChild(meta);
 }
