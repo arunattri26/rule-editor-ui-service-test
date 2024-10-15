@@ -359,7 +359,7 @@ function enableRuleEditorExtension() {
   const version = params.get('livecycle-ruleeditor-ui-service_version');
   // if (version) {
     // meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=${version}`;
-    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=PR-117-94bd91de6f867ef1db817608f04e4a5d0b4aeab7`;
+    meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html?livecycle-ruleeditor-ui-service_version=PR-117-6b5a617cf3091c1069f43d72c2e5eb2648306010`;
   // } else {
   //   meta.content = `https://experience.adobe.com/solutions/livecycle-ruleeditor-ui-service/static-assets/resources/universal_editor.html`;
   // }
