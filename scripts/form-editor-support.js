@@ -354,7 +354,7 @@ function enableRuleEditorExtension() {
   const head = document.getElementsByTagName('head')[0];
   const meta = document.createElement('meta');
   meta.name = 'urn:adobe:aue:config:extensions';
-  const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.hash.substring(1)); // Remove the leading '#' character
   console.log('Rule editor extension Params: ', params);
   const version = params.get('livecycle-ruleeditor-ui-service_version');
   if (version) {
