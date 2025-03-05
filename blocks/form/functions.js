@@ -16,9 +16,10 @@ function getFullName(firstname, lastname) {
  * @returns {number} returns the number of days between two dates
  */
 function days(endDate, startDate) {
-  const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
-  const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
-
+  // const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
+  // const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
+  const start = new Date(startDate);
+  const end = new Date(endDate);
   // return zero if dates are valid
   if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
     return 0;
