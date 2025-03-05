@@ -18,15 +18,29 @@ function getFullName(firstname, lastname) {
 function days(endDate, startDate) {
   // const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   // const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
-  const start = new Date(startDate);
-  const end = new Date(endDate);
-  // return zero if dates are valid
-  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
-    return 0;
+  const start = dateToDaysSinceEpoch(startDate);
+  const end = dateToDaysSinceEpoch(endDate);
+  
+  return end - start;
+}
+
+function dateToDaysSinceEpoch(date) {
+  let dateObj;
+  if (typeof date === 'string') {
+      dateObj = new Date(date); 
+  } else if (typeof date === 'number') {
+      return Math.floor(date);
+  } else if (date instanceof Date) {
+      dateObj = date;
+  } else {
+      throw new Error('Invalid date input');
   }
 
-  const diffInMs = Math.abs(end.getTime() - start.getTime());
-  return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+  // Validate that date is valid after parsing
+  if (isNaN(dateObj.getTime())) {
+      throw new Error('Invalid date input');
+  }
+  return Math.floor(dateObj.getTime() / (1000 * 60 * 60 * 24));
 }
 
 // eslint-disable-next-line import/prefer-default-export
