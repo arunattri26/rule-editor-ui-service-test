@@ -1,3 +1,5 @@
+import { getFullName1, getFullName2 } from './cc_functions';
+
 /**
  * Get Full Name
  * @name getFullName Concats first name and last name
@@ -49,4 +51,4 @@ function dateToDaysSinceEpoch(date) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, dateToDaysSinceEpoch };
+export { getFullName, days, dateToDaysSinceEpoch, getFullName1, getFullName2 };
