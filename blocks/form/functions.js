@@ -1,4 +1,4 @@
-// import { getFullName1, getFullName2 } from './cc_functions';
+import { getFullName1, getFullName2 } from './cc_functions';
 
 /**
  * Get Full Name
@@ -51,5 +51,5 @@ function dateToDaysSinceEpoch(date) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-// export { getFullName, days, dateToDaysSinceEpoch, getFullName1, getFullName2 };
-export { getFullName, days, dateToDaysSinceEpoch };
+export { getFullName, days, dateToDaysSinceEpoch, getFullName1, getFullName2 };
+// export { getFullName, days, dateToDaysSinceEpoch };
