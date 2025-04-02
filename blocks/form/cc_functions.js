@@ -1,4 +1,4 @@
-import { getFullName1 } from './cc/functions';
+import { getFullName1, getFullName3 } from './cc/cc1/cc2/functions';
 
 /**
  * Get Full Name 2
@@ -12,4 +12,4 @@ function getFullName2(firstname, lastname) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName1, getFullName2 };
+export { getFullName1, getFullName2, getFullName3 };
