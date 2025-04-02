@@ -1,4 +1,4 @@
-import { getFullName1, getFullName3 } from './cc/cc1/cc3/functions';
+import { getFullName1, getFullName3 } from './cc/cc1/cc2/functions';
 
 /**
  * Get Full Name 2
