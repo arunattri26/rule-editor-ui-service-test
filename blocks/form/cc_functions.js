@@ -2,12 +2,12 @@ import { getFullName1, getFullName3 } from './cc/cc1/cc2/functions';
 
 /**
  * Get Full Name 2
- * @name getFullName2 Concats first name and last name 1
+ * @name getFullName2 Concats first name and last name 2
  * @param {string} firstname in Stringformat
  * @param {string} lastname in Stringformat
  * @return {string}
  */
-function getFullName2(firstname, lastname)) {
+function getFullName2(firstname, lastname) {
     return `${firstname} ${lastname}`.trim();
 }
 
