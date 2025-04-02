@@ -31,7 +31,7 @@ function days(endDate, startDate) {
  * @param {*} date
  * @returns {number} returns the number of days since epoch
  */
-function dateToDaysSinceEpoch(date) {
+function dateToDaysSinceEpoch(date)) {
   let dateObj;
   if (typeof date === 'string') {
       dateObj = new Date(date); 
