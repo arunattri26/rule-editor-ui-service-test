@@ -209,11 +209,11 @@
         "label": "Submit Action",
         "options": [
           {
-            "name": "Submit to REST endpoint",
+            "name": "Submit to REST endpoint1",
             "value": "fd/af/components/guidesubmittype/restendpoint"
           },
           {
-            "name": "Send email",
+            "name": "Send email1",
             "value": "fd/af/components/guidesubmittype/email"
           }
         ],
@@ -222,7 +222,7 @@
       {
         "component": "boolean",
         "name": "enableRestEndpointPost",
-        "label": "Enable POST request",
+        "label": "Enable POST request1",
         "valueType": "string",
         "condition": {
           "==": [
@@ -242,7 +242,7 @@
       {
         "component": "text",
         "name": "restEndpointPostUrl",
-        "label": "URL For POST request",
+        "label": "URL For POST request12",
         "valueType": "string",
         "condition": {
           "==": [
