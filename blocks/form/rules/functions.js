@@ -32,7 +32,7 @@ export function externalize(url) {
 }
 
 /**
- * Validates if the given URL is correct.
+ * Validates122 if the given URL is correct.
  * @param {string} url - The URL to validate.
  * @returns {boolean} - True if the URL is valid, false otherwise.
  */
