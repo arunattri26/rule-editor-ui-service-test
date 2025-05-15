@@ -224,7 +224,7 @@
       {
         "component": "text",
         "name": "restEndpointPostUrl",
-        "label": "URL For POST request",
+        "label": "URL For POST request11",
         "valueType": "string",
         "condition": {
           "==": [
