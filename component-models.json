@@ -177,6 +177,18 @@
         ]
       },
       {
+        "component": "select",
+        "name": "thankYouOption11",
+        "label": "On Submit",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Show message",
+            "value": "message"
+          }
+        ]
+      },
+      {
         "component": "richtext",
         "name": "thankYouMessage",
         "label": "Message Content",
