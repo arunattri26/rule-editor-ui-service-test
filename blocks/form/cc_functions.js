@@ -7,9 +7,9 @@ import { getFullName1, getFullName3 } from './cc/cc1/cc2/functions';
  * @param {string} lastname in Stringformat
  * @return {string}
  */
-function getFullName2(firstname, lastname) {
+function getFullNameArun5(firstname, lastname) {
     return `${firstname} ${lastname}`.trim();
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName1, getFullName2, getFullName3 };
+export { getFullName1, getFullNameArun5, getFullName3 };
