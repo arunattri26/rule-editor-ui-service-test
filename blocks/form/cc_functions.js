@@ -2,7 +2,7 @@ import { getFullName1, getFullName3 } from './cc/cc1/cc2/functions';
 
 /**
  * Get Full Name 5
- * @name getFullName5 Concats first name and last name 5
+ * @name getFullNameArun5 Concats first name and last name 5
  * @param {string} firstname in Stringformat
  * @param {string} lastname in Stringformat
  * @return {string}
