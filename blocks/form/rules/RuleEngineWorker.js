@@ -60,7 +60,7 @@ onmessage = (e) => {
   }
 
   if (!customFunctionRegistered) {
-    registerCustomFunctions(getCustomFunctionsPath()).then(() => {
+    registerCustomFunctions(this.getCustomFunctionsPath()).then(() => {
       customFunctionRegistered = true;
       handleMessageEvent(e);
     });
