@@ -60,7 +60,7 @@ onmessage = (e) => {
   }
 
   if (!customFunctionRegistered) {
-    registerCustomFunctions(this.getCustomFunctionsPath()).then(() => {
+    registerCustomFunctions(ruleEngine.getCustomFunctionsPath()).then(() => {
       customFunctionRegistered = true;
       handleMessageEvent(e);
     });
