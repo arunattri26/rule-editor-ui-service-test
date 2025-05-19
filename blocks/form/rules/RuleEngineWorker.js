@@ -60,6 +60,7 @@ onmessage = (e) => {
   }
 
   if (!customFunctionRegistered) {
+    ruleEngine = new RuleEngine(e.data.payload);
     registerCustomFunctions(ruleEngine.getCustomFunctionsPath()).then(() => {
       customFunctionRegistered = true;
       handleMessageEvent(e);
