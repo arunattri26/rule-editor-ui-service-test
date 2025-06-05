@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://author-p133911-e1313554.adobeaemcloud.com/bin/franklin.delivery/jalagari/demo/main
+    url: https://mycq6502.share.zrok.io/bin/franklin.delivery/arunattri26/rule-editor-ui-service-test/testing-aattri
     type: "markup"
     suffix: ".html"
