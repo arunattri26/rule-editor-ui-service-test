@@ -43,10 +43,10 @@ function dateToDaysSinceEpoch(date) {
   }
 
   // Validate that date is valid after parsing
-  if (isNaN(dateObj?.getTime())) {
+  if (isNaN(dateObj.getTime())) {
       throw new Error('Invalid date input');
   }
-  return Math.floor(dateObj?.getTime() / (1000 * 60 * 60 * 24));
+  return Math.floor(dateObj.getTime() / (1000 * 60 * 60 * 24));
 }
 
 // eslint-disable-next-line import/prefer-default-export
