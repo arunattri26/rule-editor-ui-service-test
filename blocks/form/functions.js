@@ -1,4 +1,3 @@
-import { getFullName1, getFullName2, getFullName3 } from './cc_functions';
 
 /**
  * Get Full Name
@@ -50,16 +49,6 @@ function dateToDaysSinceEpoch(date) {
   return Math.floor(dateObj?.getTime() / (1000 * 60 * 60 * 24));
 }
 
-/**
-* testImportData
-* @return {object}
-*/
-function testImportData(){
-  //var a = {"textinput":"sbc","panelcontainer":{"textinputPanel":"importData"},"textinput1745475904576":"sdf","textinputFrag":"sdf","textinputPanel":"importData"}
-  var a = {"textinput":"sbc","textinput1745475904576":"sdf","textinputFrag":"sdf","textinputPanel":"importData","unmapped":{"field":"unmapped"}}
-  return a;
-}
-
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, dateToDaysSinceEpoch, getFullName1, getFullName2, getFullName3, testImportData };
+export { getFullName, days, dateToDaysSinceEpoch };
 // export { getFullName, days, dateToDaysSinceEpoch };
