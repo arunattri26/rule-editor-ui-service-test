@@ -50,5 +50,5 @@ function dateToDaysSinceEpoch(date) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, dateToDaysSinceEpoch, fetchMergedBranchDetails };
+export { getFullName, days, dateToDaysSinceEpoch };
 // export { getFullName, days, dateToDaysSinceEpoch };
